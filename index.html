@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BC54_TranNgocNhan</title>
+</head>
+
+<body>
+  <!-- Tính Tiền Lương Nhân Viên -->
+  <h1>Tính Tiền Lương Nhân Viên</h1>
+  <label for="soNgayLam">Nhập số ngày làm:</label>
+  <input type="number" id="soNgayLam" min="0">
+  <button onclick="tinhLuong()">Tính Lương</button>
+  <p id="ketQuaLuong"></p>
+
+  <br><br><br>
+
+  <!-- Tính Giá Trị Trung Bình Của 5 Số -->
+  <h1>Tính Giá Trị Trung Bình Của 5 Số</h1>
+  <label for="numbers">Nhập 5 số thực, cách nhau bằng dấu phẩy:</label>
+  <input type="text" id="numbers">
+  <button onclick="tinhTrungBinh()">Tính Trung Bình</button>
+  <p id="ketQuaTB"></p>
+
+  <br><br><br>
+
+  <!-- Quy Đổi USD Sang VND -->
+  <h1>Quy Đổi USD Sang VND</h1>
+  <label for="usd">Nhập số tiền USD:</label>
+  <input type="number" id="usd" min="0">
+  <button onclick="quyDoi()">Quy Đổi</button>
+  <p id="ketQuaVND"></p>
+
+  <br><br><br>
+
+  <!-- Tính diện tích, chu vi hình chữ nhật -->
+  <h1>Tính Diện Tích và Chu Vi Hình Chữ Nhật</h1>
+  <label for="chieuDai">Nhập chiều dài:</label>
+  <input type="number" id="chieuDai" min="0">
+  <br>
+  <label for="chieuRong">Nhập chiều rộng:</label>
+  <input type="number" id="chieuRong" min="0">
+  <br>
+  <button onclick="tinhToan()">Tính Toán</button>
+  <p id="dienTich"></p>
+  <p id="chuVi"></p>
+
+  <br><br><br>
+
+  <!-- Tính tổng 2 ký số -->
+  <h1>Tính Tổng 2 Ký Số</h1>
+  <label for="soNhap">Nhập số có 2 ký số:</label>
+  <input type="text" id="soNhap">
+  <button onclick="tinhTong()">Tính Tổng</button>
+  <p id="ketQua2KySo"></p>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
