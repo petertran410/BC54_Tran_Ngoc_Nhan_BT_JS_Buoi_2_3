@@ -1,62 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BC54_TranNgocNhan</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- FONTAWSOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Tính Tiền Lương Nhân Viên -->
-  <h1>Tính Tiền Lương Nhân Viên</h1>
-  <label for="soNgayLam">Nhập số ngày làm:</label>
-  <input type="number" id="soNgayLam" min="0">
-  <button onclick="tinhLuong()">Tính Lương</button>
-  <p id="ketQuaLuong"></p>
+  <div class="container">
+    <!-- Tính Tiền Lương Nhân Viên -->
+    <div class = "hw-header">
+      <i class="fa-solid fa-sack-dollar"></i>
+      <h3>Tính Tiền Lương Nhân Viên</h3>
+    </div>
+    <label for="soNgayLam">Nhập số ngày làm:</label>
+    <input type="number" class="form-control form__input" id="soNgayLam" min="0">
+    <br>
+    <button type = "button" class = "btn btn-primary" onclick="tinhLuong()">Tính Lương</button>
+    <p class = "alert alert-success">
+      <span id="ketQuaLuong"></span>
+    </p>
 
-  <br><br><br>
+    <br><br><br>
 
-  <!-- Tính Giá Trị Trung Bình Của 5 Số -->
-  <h1>Tính Giá Trị Trung Bình Của 5 Số</h1>
-  <label for="numbers">Nhập 5 số thực, cách nhau bằng dấu phẩy:</label>
-  <input type="text" id="numbers">
-  <button onclick="tinhTrungBinh()">Tính Trung Bình</button>
-  <p id="ketQuaTB"></p>
+    <!-- Tính Giá Trị Trung Bình Của 5 Số -->
+    <div class = "hw-header">
+      <i class="fa-solid fa-gauge"></i>
+      <h3>Tính Giá Trị Trung Bình Của 5 Số</h3>
+    </div>
+    <label for="numbers">Nhập 5 số thực, cách nhau bằng dấu phẩy:</label>
+    <input type="text" class="form-control form__input" id="numbers">
+    <br>
+    <button type = "button" class = "btn btn-primary" onclick="tinhTrungBinh()">Tính Trung Bình</button>
+    <p class = "alert alert-success">
+      <span id="ketQuaTB"></span>
+    </p>
 
-  <br><br><br>
+    <br><br><br>
 
-  <!-- Quy Đổi USD Sang VND -->
-  <h1>Quy Đổi USD Sang VND</h1>
-  <label for="usd">Nhập số tiền USD:</label>
-  <input type="number" id="usd" min="0">
-  <button onclick="quyDoi()">Quy Đổi</button>
-  <p id="ketQuaVND"></p>
+    <!-- Quy Đổi USD Sang VND -->
+    <div class = "hw-header">
+      <i class="fa-solid fa-cash-register"></i>
+      <h3>Quy Đổi USD Sang VND</h3>
+    </div>
+    <label for="usd">Nhập số tiền USD:</label>
+    <input type="number" class="form-control form__input" id="usd" min="0">
+    <br>
+    <button type = "button" class = "btn btn-primary" onclick="quyDoi()">Quy Đổi</button>
+    <p class = "alert alert-success">
+      <span id="ketQuaVND"></span>
+    </p>
 
-  <br><br><br>
+    <br><br><br>
 
-  <!-- Tính diện tích, chu vi hình chữ nhật -->
-  <h1>Tính Diện Tích và Chu Vi Hình Chữ Nhật</h1>
-  <label for="chieuDai">Nhập chiều dài:</label>
-  <input type="number" id="chieuDai" min="0">
-  <label for="chieuRong">Nhập chiều rộng:</label>
-  <input type="number" id="chieuRong" min="0">
-  <br>
-  <button onclick="tinhToan()">Tính Toán</button>
-  <p id="dienTich"></p>
-  <p id="chuVi"></p>
+    <!-- Tính diện tích, chu vi hình chữ nhật -->
+    <div class = "hw-header">
+      <i class="fa-solid fa-calculator"></i>
+      <h3>Tính Diện Tích và Chu Vi Hình Chữ Nhật</h3>
+    </div>
+    <label for="chieuDai">Nhập chiều dài:</label>
+    <input type="number" class="form-control form__input" id="chieuDai" min="0">
+    <label for="chieuRong">Nhập chiều rộng:</label>
+    <input type="number" class="form-control form__input" id="chieuRong" min="0">
+    <br>
+    <button type = "button" class = "btn btn-primary" onclick="tinhToan()">Tính Toán</button>
+    <p class = "alert alert-success">
+      <span id="dienTich"></span>
+    </p>
+    <p class = "alert alert-success">
+      <span id="chuVi"></span>
+    </p>
 
-  <br><br><br>
+    <br><br><br>
 
-  <!-- Tính tổng 2 ký số -->
-  <h1>Tính Tổng 2 Ký Số</h1>
-  <label for="soNhap">Nhập số có 2 ký số:</label>
-  <input type="text" id="soNhap">
-  <button onclick="tinhTong()">Tính Tổng</button>
-  <p id="ketQua2KySo"></p>
-
+    <!-- Tính tổng 2 ký số -->
+    <div class = "hw-header">
+      <i class="fa-solid fa-calculator"></i>
+      <h3>Tính Tổng 2 Ký Số</h3>
+    </div>
+    <label for="soNhap">Nhập số có 2 ký số:</label>
+    <input type="text" class="form-control form__input" id="soNhap">
+    <br>
+    <button type = "button" class = "btn btn-primary" onclick="tinhTong()">Tính Tổng</button>
+    <p class = "alert alert-success">
+      <span id="ketQua2KySo"></span>
+    </p>
+  </div>
 
   <script src="index.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
